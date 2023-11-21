@@ -4,21 +4,22 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
-    background: #cfe9ff;
+    background: #000000;
 }
-::selection{
+
+::selection {
     color: #f2f3f5;
-    background-color: #0a8c26;
+    background-color: #FE4F00;
     padding: 100px;
 }
 
 .login-box {
-    margin-top: 75px;
+    margin-top: 0px;
     border-radius: 20px;
     height: auto;
-    background: #1A2226;
+    background: #000000;
     text-align: center;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgb(0, 0, 0), 0 3px 6px rgb(0, 0, 0);
 }
 
 .login-key {
@@ -35,7 +36,6 @@ body {
     text-align: center;
     font-size: 30px;
     letter-spacing: 2px;
-    margin-top: 15px;
     font-weight: bold;
     color: #ECF0F5;
 }
@@ -46,19 +46,7 @@ body {
 }
 
 input[type=text] {
-    background-color: #1A2226;
-    border: none;
-    border-bottom: 2px solid #0DB8DE;
-    border-top: 0px;
-    border-radius: 0px;
-    font-weight: bold;
-    outline: 0;
-    margin-bottom: 20px;
-    padding-left: 0px;
-    color: #ECF0F5;
-}
-input[type=email] {
-    background-color: #1A2226;
+    background-color: #100f0f;
     border: none;
     border-bottom: 2px solid #0DB8DE;
     border-top: 0px;
@@ -70,15 +58,28 @@ input[type=email] {
     color: #ECF0F5;
 }
 
-input[type=password] {
-    background-color: #1A2226;
+input[type=email] {
+    background-color: #100f0f;
     border: none;
     border-bottom: 2px solid #0DB8DE;
     border-top: 0px;
-    border-radius: 0px;
+    border-radius: 10px;
     font-weight: bold;
     outline: 0;
-    padding-left: 0px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    color: #ECF0F5;
+}
+
+input[type=password] {
+    background-color: #100f0f;
+    border: none;
+    border-bottom: 2px solid #0DB8DE;
+    border-top: 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    outline: 0;
+    padding-left: 10px;
     margin-bottom: 20px;
     color: #ECF0F5;
 }

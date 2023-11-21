@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
 
     <title>Sidebar</title>
 
@@ -16,72 +16,53 @@
 
 <body>
 
-    <div class="h-100 min-vh-100 sidebar-header" id="sidebar" th:fragment="sidebar">
-        <!-- Sidebar Holder -->
-        <nav >
-            <div class="p-2">
-                <h5>Car Management System</h5>
-                <hr>
-                <h6 th:text="${currentUserName}"></h6>
-                <hr>
-            </div>
-            <div class="mt-2 sidebar-inner px-2 pt-1 nav-item">
-                <ul class="nav nav-pills flex-column pt-1 pt-md-0">
-                    <li class="nav-item my-1">
-                        <a href="/" id="dashboard" class="nav-link text-white fs-700">
-                            <span class="px-1">Dashboard</span>
-                        </a>
-                    </li>
-                    <li class="nav-item my-1">
-                        <a href="/employee" id="emp-registration" class="nav-link text-white fs-700">
-                            <span class="px-1">Employee</span>
-                        </a>
-                    </li>
-                    <li class="nav-item my-1">
-                        <a href="/car" id="car-registration" class="nav-link text-white fs-700">
-                            <span class="px-1">Car</span>
-                        </a>
-                    </li>
-                    <li class="nav-item my-1">
-                        <a href="/car-request" id="car-request" class="nav-link text-white fs-700">
-                            <span class="px-1">Car Request</span>
-                        </a>
-                    </li>
-                    <li class="nav-item my-1">
-                        <a href="/car-schedule" id="car-schedule" class="nav-link text-white fs-700">
-                            <span class="px-1">Car Schedule</span>
-                        </a>
-                    </li>
-                    <li class="nav-item my-1">
-                        <a href="/car-expense" id="car-expense" class="nav-link text-white fs-700">
-                            <span class="px-1">Car Expense</span>
-                        </a>
-                    </li>
-                    <li class="nav-item my-1">
-                        <a href="/expense-payment" id="expense-payment" class="nav-link text-white fs-700">
-                            <span class="px-1">Expense Payment</span>
-                        </a>
-                    </li>
-                    <li class="nav-item my-1">
-                        <a href="/duty-payment" id="duty-payment" class="nav-link text-white fs-700">
-                            <span class="px-1">Duty Payment</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+<div class="h-100 min-vh-100 border-end border-warning sidebar-header" id="sidebar" th:fragment="sidebar">
+    <!-- Sidebar Holder -->
+    <nav>
+        <div class="p-2">
+            <img alt="Lazeez" class="rounded mx-auto d-block" height="70px" th:src="@{photos/logo.jpeg}">
+            <h5 class="d-flex justify-content-center">Lazeez</h5>
+            <hr>
+            <h6 class="d-flex justify-content-center" th:text="${currentUserName}"></h6>
+            <hr>
+        </div>
+        <div class="mt-2 sidebar-inner px-2 pt-1 nav-item">
+            <ul class="nav nav-pills flex-column pt-1 pt-md-0">
+                <li class="nav-item my-1">
+                    <a class="nav-link text-white fs-700" href="/dashboard" id="dashboard">
+                        <span class="px-1">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item my-1">
+                    <a class="nav-link text-white fs-700" href="/employee" id="emp-registration">
+                        <span class="px-1">Employee</span>
+                    </a>
+                </li>
+                <li class="nav-item my-1">
+                    <a class="nav-link text-white fs-700" href="/order" id="order">
+                        <span class="px-1">Order</span>
+                    </a>
+                </li>
+                <li class="nav-item my-1">
+                    <a class="nav-link text-white fs-700" href="/food-menu" id="food-menu">
+                        <span class="px-1">Food Menu</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script type="text/javascript" th:src="@{/js/jquery-3.7.1.min.js}"></script>
-    <!-- Popper.JS -->
-    <script type="text/javascript"  th:src="@{/js/popper.min.js}"></script>
-    <!-- Bootstrap JS -->
-    <script type="text/javascript"  th:src="@{/js/bootstrap.bundle.min.js}"></script>
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script th:src="@{/js/jquery-3.7.1.min.js}" type="text/javascript"></script>
+<!-- Popper.JS -->
+<script th:src="@{/js/popper.min.js}" type="text/javascript"></script>
+<!-- Bootstrap JS -->
+<script th:src="@{/js/bootstrap.bundle.min.js}" type="text/javascript"></script>
 
-    <script type="text/javascript">
+<script type="text/javascript">
 
-    </script>
+</script>
 </body>
 
 </html>
